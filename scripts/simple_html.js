@@ -14,7 +14,5 @@ var text = document.getElementById('randColour');
 
 function colourText() {
 	var rand = Math.floor(Math.random() * arrLength);
-	console.log(colours[rand]);
-	
 	document.getElementById('randColour').style="color: "+colours[rand];
 }
