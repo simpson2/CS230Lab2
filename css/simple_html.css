@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Quattrocento');
+
+#heading {
+	font-family: 'Quattrocento', sans-serif, cursive;
+}
+
+.shows {
+    color: blue;
+    font-family: 'Indie Flower', sans-serif, cursive;
+}
+
+.hobbies {
+    color: green;
+    font-family: 'Indie Flower', sans-serif, cursive;
+}
+
+.interests {
+    color: orange;
+    font-family: 'Indie Flower', sans-serif, cursive;
+}
+
+#picOfCat {
+    border-style: solid;
+    border-width: 5px;
+    border-color: yellow;
+    border-radius: 20px;
+}
