@@ -9,10 +9,24 @@ function removeDate() {
 
 //Random colour generator for 'Lorem ipsum text'
 var colours = ['green', 'blue', 'yellow', 'grey', 'red', 'orange'];
-var arrLength = colours.length;
-var text = document.getElementById('randColour');
+var coloursLength = colours.length;
 
 function colourText() {
-	var rand = Math.floor(Math.random() * arrLength);
+	var rand = Math.floor(Math.random() * coloursLength);
 	document.getElementById('randColour').style="color: "+colours[rand];
+}
+
+var words = ['basket', 'capture', 'control', 'mystery', 'moon', 'owl', 'seasonal', 'quote', 'examination', 'slant'];
+var wordsLength = words.length;
+//var randWords = document.getElementById('randWords');
+var c = 0;
+
+function randomWords() {
+    var rand = Math.floor(Math.random() * wordsLength);
+    document.getElementById('randWords').innerHTML = words[rand];
+    c++;
+
+    if(c % 5 == 0) {
+        document.getElementById('randWords').innerHTML =  "";
+    }
 }
