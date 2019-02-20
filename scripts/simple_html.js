@@ -4,28 +4,47 @@ function getDate() {
 }
 
 function removeDate() {
-	document.getElementById('currDate').innerHTML = "";
+    document.getElementById('currDate').innerHTML = "";
 }
 
-//Random colour generator for 'Lorem ipsum text'
-var colours = ['green', 'blue', 'yellow', 'grey', 'red', 'orange'];
+
+var colours = [
+    'green',
+    'blue',
+    'yellow',
+    'grey',
+    'red',
+    'orange'];
+var words = [
+    ' basket ',
+    ' capture ',
+    ' control ',
+    ' mystery ',
+    ' moon ',
+    ' owl ',
+    ' seasonal ',
+    ' quote ',
+    ' examination ',
+    ' slant '];
 var coloursLength = colours.length;
-
-function colourText() {
-	var rand = Math.floor(Math.random() * coloursLength);
-	document.getElementById('randColour').style="color: "+colours[rand];
-}
-
-var words = ['basket', 'capture', 'control', 'mystery', 'moon', 'owl', 'seasonal', 'quote', 'examination', 'slant'];
 var wordsLength = words.length;
+
 var c = 0;
 
-function randomWords() {
+//Random colour generator for 'Lorem ipsum text'
+function loremColour() {
+    var rand = Math.floor(Math.random() * coloursLength);
+    document.getElementById('loremIpsum').style = "color: " + colours[rand];
+}
+
+//Random word generator 
+function loremWords() {
     var rand = Math.floor(Math.random() * wordsLength);
-    document.getElementById('randWords').innerHTML = words[rand];
+    document.getElementById('loremIpsum').textContent += words[rand];
     c++;
 
-    if(c % 5 == 0) {
-        document.getElementById('randWords').innerHTML =  "";
+    if (c % 6 == 0) {
+        c = 0;
+        document.getElementById('loremIpsum').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id.";
     }
 }
