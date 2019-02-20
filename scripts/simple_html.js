@@ -18,7 +18,6 @@ function colourText() {
 
 var words = ['basket', 'capture', 'control', 'mystery', 'moon', 'owl', 'seasonal', 'quote', 'examination', 'slant'];
 var wordsLength = words.length;
-//var randWords = document.getElementById('randWords');
 var c = 0;
 
 function randomWords() {
