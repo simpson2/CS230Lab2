@@ -4,17 +4,17 @@
 	font-family: 'Quattrocento', sans-serif, cursive;
 }
 
-.shows {
+#shows {
     color: blue;
     font-family: 'Indie Flower', sans-serif, cursive;
 }
 
-.hobbies {
+#hobbies {
     color: green;
     font-family: 'Indie Flower', sans-serif, cursive;
 }
 
-.interests {
+#interests {
     color: orange;
     font-family: 'Indie Flower', sans-serif, cursive;
 }
